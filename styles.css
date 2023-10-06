@@ -124,14 +124,14 @@ h1 {
 
     #board {
         max-width: 100%; /* Adjust the board's maximum width for small screens */
-        gap: 10px;
+        gap: 7.5px;
         padding: 30px;
     }
 
     .cell {
         font-size: 90px; /* Reduce cell font size for smaller screens */
-        height: 100px; /* Reduce cell height for smaller screens */
-        width: 100px;
+        height: 85px; /* Reduce cell height for smaller screens */
+        width: 85px;
         color: #14e7ff;
         text-shadow:0px 0px 15px #074967;
     }

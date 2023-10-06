@@ -150,7 +150,7 @@ h1 {
     .modal {
         width: 80%; /* Adjust modal width for small screens */
         max-width: 250px; /* Reduce modal width for small screens */
-        top: 74%;
+        top: 85%;
     }
 
     .modal-content {

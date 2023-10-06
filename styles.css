@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #3498db, #1abc9c); /* Adjust colors as needed */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+h1 {
+    margin-top: 110px;
+    font-size: 50px;
+    /* color:#14e7ff; */
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7.5px;
+    margin: 20px auto;
+    max-width: 300px;
+    /* border: 2px solid #333; */
+    padding: 20px;
+}
+
+.cell {
+    width: 100%;
+    height: 100px;
+    font-size: 90px;
+    color: #14e7ff;
+    text-shadow:0px 0px 10px #074967;
+    /* border: 2px solid #333; */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    font-weight:bolder;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+#message {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#restart-button {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Add this CSS to style the modal */
+/* CSS for the small centered pop-up window with gradient background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    width: 250px; /* Adjust the width as needed */
+    max-width: 50%;
+    background: linear-gradient(to bottom, #3498db, #1abc9c); /* Gradient colors */
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white; /* Text color for the modal */
+}
+
+#play-again-button {
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* CSS for the video background */
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Place it behind other content */
+}
+
+
+
+
+/* Mobile-responsive styles using media queries */
+@media (max-width: 1200px) {
+    h1 {
+        margin-top: 100px; /* Further reduce top margin for smaller screens */
+        color: #14e7ff;
+    }
+}
+@media (max-width: 450px) {
+    h1 {
+        margin-top: 100px; /* Further reduce top margin for smaller screens */
+        color: #14e7ff;
+        font-size: 40px;
+    }
+
+    #board {
+        max-width: 100%; /* Adjust the board's maximum width for small screens */
+        gap: 10px;
+        padding: 30px;
+    }
+
+    .cell {
+        font-size: 90px; /* Reduce cell font size for smaller screens */
+        height: 100px; /* Reduce cell height for smaller screens */
+        width: 100px;
+        color: #14e7ff;
+        text-shadow:0px 0px 15px #074967;
+    }
+
+    #message {
+        font-size: 18px; /* Reduce message font size for smaller screens */
+    }
+
+    #restart-button {
+        font-size: 20px; /* Reduce button font size for smaller screens */
+        background-color: #23b0c0;
+        color: #000000;
+        
+    }
+
+    .modal {
+        width: 80%; /* Adjust modal width for small screens */
+        max-width: 250px; /* Reduce modal width for small screens */
+        top: 74%;
+    }
+
+    .modal-content {
+        padding: 10px; /* Reduce modal content padding for small screens */
+    }
+
+    #play-again-button {
+        font-size: 14px; /* Reduce button font size in the modal for small screens */
+        padding: 5px 10px; /* Reduce button padding in the modal for small screens */
+    }
+
+    #video-background {
+        height: 100%;
+        margin-right: 10px;
+    }
+}
